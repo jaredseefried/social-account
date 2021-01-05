@@ -16,6 +16,10 @@ const PostingSchema = new Schema({
     type: String,
   },
 
+  link: {
+    type: String,
+  },
+
   userCreated: {
     type: Date,
     default: Date.now

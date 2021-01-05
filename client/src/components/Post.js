@@ -130,7 +130,7 @@ function PostStatus() {
           <div className="col-12">
             <label htmlFor="exampleFormControlTextarea1" className="form-label">Description</label>
             <textarea className="form-control" name="description" value={postForm.description} id="exampleFormControlTextarea1" onChange={handleInputChange} rows="3"></textarea>
-            <input type="text" className="form-control" name="link" value={postForm.link}  onChange={handleInputChange} placeholder="Link" />
+            <input type="text" className="form-control" name="link" value={postForm.link} onChange={handleInputChange} placeholder="Link" />
           </div>
           {/* <div className="col-12">
             <label htmlFor="exampleFormControlInput1" className="form-label">Image Link</label>
@@ -159,7 +159,7 @@ function PostStatus() {
               title={posting.title}
               description={posting.description}
               image={posting.image}
-
+              link={posting.link}
             />
           ))}
         </div>
