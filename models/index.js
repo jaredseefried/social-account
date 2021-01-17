@@ -1,5 +1,6 @@
 module.exports = {
   Contact: require('./contactModel'),
   Posting: require('./postStatusModel'),
-  Images: require('./imageModel')
+  Images: require('./imageModel'),
+  Signup: require('./signupModel')
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import API from '../utils/API';
 import Cards from './Cards'
 // import axios from 'axios'
-// import { response } from 'express';
+
 
 function PostStatus() {
 
@@ -118,6 +118,7 @@ function PostStatus() {
 
   return (
     <div className="post-container col-12">
+      
       <div className="row">
         <h1 className="post-title">Post Status!</h1>
       </div>
@@ -125,7 +126,7 @@ function PostStatus() {
         <div className="form col-12">
           <div className="col-12">
             <label htmlFor="exampleFormControlInput1" className="form-label">Title</label>
-            <input type="text" className="form-control" name="title" value={postForm.title}  onChange={handleInputChange} placeholder="Title" />
+            <input type="text" className="form-control" name="title" value={postForm.title} onChange={handleInputChange} placeholder="Title" />
           </div>
           <div className="col-12">
             <label htmlFor="exampleFormControlTextarea1" className="form-label">Description</label>
