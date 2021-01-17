@@ -1,35 +1,23 @@
 import axios from 'axios'
 
 export default {
-  getPost: function () {
-    return axios.get('/api/posting')
-  },
+  getPost: () => { return axios.get('/api/posting') },
 
-  postPosting: function (data){
-    return axios.post('/api/posting', data)
-  },
-  
-  getContacts: function () {
-    return axios.get("/api/contacts")
-  },
+  postPosting: (data) => { return axios.post('/api/posting', data) },
 
-  contactForm: function (data) {
-    return axios.post("/api/contacts", data)
-  },
+  getContacts: () => { return axios.get("/api/contacts") },
 
-  getImage: function(){
-    return axios.get("/api/images")
-  },
+  contactForm: (data) => { return axios.post("/api/contacts", data) },
 
-  uploadImage: function(data){
-    return axios.post('/api/images', data)
-  },
+  getImage: () => { return axios.get("/api/images") },
 
-  getCloudinary: function(){
-    return axios.get('/api/cloudinary')
-  },
+  uploadImage: (data) => { return axios.post('/api/images', data) },
 
-  sendToCloudinary: function(formData){
-    return axios.post('/api/cloudinary', formData)
-  }
+  getCloudinary: () => { return axios.get('/api/cloudinary') },
+
+  sendToCloudinary: (formData) => { return axios.post('/api/cloudinary', formData) },
+
+  signupForm: (data) => { return axios.post('/api/signup', data) },
+
+  getSignupDB: () => { return axios.get('/api/signup') }
 }
